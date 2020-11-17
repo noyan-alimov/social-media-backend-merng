@@ -9,3 +9,13 @@
 	width: 25rem;
 	margin: auto;
 }
+
+.comment-button {
+	margin: 0.5rem 0 !important;
+}
+
+@media screen and (min-width: 700px) {
+	.comment-button {
+		margin: 0 3rem 0 0.5rem !important;
+	}
+}

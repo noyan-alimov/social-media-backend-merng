@@ -39,20 +39,30 @@ function PostForm() {
 	}
 
 	return (
-		<Form onSubmit={onSubmit}>
-			<h2>Create a post:</h2>
-			<Form.Field>
-				<Form.Input
-					placeholder='Hi World!'
-					name='body'
-					value={values.body}
-					onChange={onChange}
-				/>
-				<Button type='submit' color='pink'>
-					Submit
-				</Button>
-			</Form.Field>
-		</Form>
+		<React.Fragment>
+			<Form onSubmit={onSubmit}>
+				<h2>Create a post:</h2>
+				<Form.Field>
+					<Form.Input
+						placeholder='Hi World!'
+						name='body'
+						value={values.body}
+						onChange={onChange}
+						error={error ? true : false}
+					/>
+					<Button type='submit' color='pink'>
+						Submit
+					</Button>
+				</Form.Field>
+			</Form>
+			{error && (
+				<div className='ui error message'>
+					<ul className='list'>
+						<li>{error.graphQLErrors[0].message}</li>
+					</ul>
+				</div>
+			)}
+		</React.Fragment>
 	);
 }
 
