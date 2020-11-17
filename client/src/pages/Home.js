@@ -11,7 +11,7 @@ function Home() {
 
 	return (
 		<Grid columns={3} divided>
-			<Grid.Row>
+			<Grid.Row className='homepage-title-container'>
 				<h1>Recent posts</h1>
 			</Grid.Row>
 			<Grid.Row>

@@ -1,1 +1,11 @@
+.homepage-title-container {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	margin-bottom: 1rem;
+}
 
+.form-container {
+	width: 25rem;
+	margin: auto;
+}
