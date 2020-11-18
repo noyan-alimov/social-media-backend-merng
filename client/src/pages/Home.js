@@ -16,7 +16,7 @@ function Home() {
 	const { loading, data } = useQuery(FETCH_POSTS_QUERY);
 
 	return (
-		<Grid columns={2}>
+		<Grid columns='2'>
 			<Grid.Row className='homepage-title-container'>
 				<h1>Recent posts</h1>
 			</Grid.Row>
